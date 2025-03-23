@@ -7,45 +7,12 @@
   <title>Mubashir Ali Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="input.css">
 </head>
 
 <body class="text-white">
-  <nav class="bg-[#02041f] p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="text-xl font-bold">
-        Mubashir Ali
-      </div>
-      <div class="hidden md:flex space-x-4">
-        <a href="index.html" class="hover:text-green-500"><i class="fa fa-home"></i></a>
-        <a href="about.html" class="hover:text-green-500"><i class="fa fa-user"></i></a>
-        <a href="skills.html" class="hover:text-green-500"><i class="fa fa-code"></i></a>
-        <a href="education.html" class="hover:text-green-500"><i class="fa fa-graduation-cap"></i></a>
-        <a href="services.html" class="hover:text-green-500"><i class="fa fa-gear"></i></a>
-        <a href="project.html" class="hover:text-green-500"><i class="fa fa-folder"></i></a>
-        <a href="contact.html" class="hover:text-green-500"><i class="fa fa-phone"></i></a>
-      </div>
-      <div class="md:hidden">
-        <button id="menu-button" class="focus:outline-none" aria-label="Menu">
-          <svg class="w-7 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden">
-      <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
-      <a href="#" class="block px-4 py-2 hover:bg-gray-700">About</a>
-      <a href="skills.html" class="block px-4 py-2 hover:bg-gray-700">Skills</a>
-      <a href="education.html" class="block px-4 py-2 hover:bg-gray-700">Education</a>
-      <a href="services.html" class="block px-4 py-2 hover:bg-gray-700">Services</a>
-      <a href="project.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
-      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
-    </div>
-  </nav>
-
-
   <section
     class="min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-r from-[#010524] to-[#040c5c]">
     <div class="container mx-auto flex flex-col lg:flex-row items-center">
@@ -96,8 +63,24 @@
           </a>
         </div>
       </div>
+
+      <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-11/12 bg-[#02041f] lg:w-1/2 shadow shadow-4xl shadow-green-500 mb-4    rounded-2xl z-10 ">
+        <ul class="flex space-x-4 justify-center py-4 text-2xl">
+          <li><a href="index.html" class="text-green-500 hover:text-green-700"><i class="fas fa-home"></i></a></li>
+          <li><a href="about.html" class="text-green-500 hover:text-green-700"><i class="fas fa-user"></i></a></li>
+          <li><a href="skills.html" class="text-green-500 hover:text-green-700"><i class="fas fa-code"></i></a></li>
+          <li><a href="education.html" class="text-green-500 hover:text-green-700"><i
+                class="fas fa-graduation-cap"></i></a></li>
+          <li><a href="project.html" class="text-green-500 hover:text-green-700"><i class="fas fa-folder"></i></a></li>
+          <li><a href="services.html" class="text-green-500 hover:text-green-700"><i class="fas fa-gear"></i></a></li>
+          <li><a href="contact.html" class="text-green-500 hover:text-green-700"><i class="fas fa-phone"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
+
+
   <script>
     document.getElementById("menu-button").addEventListener("click", function () {
       var menu = document.getElementById("mobile-menu");
@@ -109,5 +92,7 @@
     });
   </script>
 </body>
+
+
 
 </html>
