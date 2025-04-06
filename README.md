@@ -45,6 +45,7 @@ I am **Mubashir Ali**, a passionate designer and developer with a keen interest 
 ### Deployment Workflow
 This project uses GitHub Actions for automated deployment:
 - **Trigger**: Push to the `main` branch.
+- **Action**: Deploy to [GitHub Pages](https://pages.github.com/).
 - **Action**: Deploy to [Vercel](https://vercel.com/).
 
 ---
