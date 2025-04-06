@@ -1,43 +1,78 @@
-# PORTFOLIO WEBSITE
+# Portfolio Website
 
-Welcome to my portfolio website! This website showcases my projects, skills,  projects and experience  as a designer and developer.
+Welcome to my portfolio website! This website showcases my projects, skills, and experience as a designer and developer.
+---
+
+## 🛠️ Tech Stack
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
+
+---
+
 
 <div align="center">
-  <br />
-    <a href="https://mubashir-a.vercel.app" target="_blank">
-      <img src="./img/porfolio.gif" alt="Project Banner">
-    </a>
-  <br />
+    <br />
+        <a href="https://mubashir-a.vercel.app" target="_blank">
+            <img src="./img/porfolio.gif" alt="Project Banner">
+        </a>
+    <br />
+</div>
 
-## About Me
-I am Mubashir Ali, a passionate designer and developer with a keen interest in creating user-centered digital experiences.
+---
+
+## 🚀 About Me
+I am **Mubashir Ali**, a passionate designer and developer with a keen interest in creating user-centered digital experiences.
+
+---
 
 
-
-## Connect with Me
+## 🌐 Connect with Me
 - **GitHub**: [mubashir1837](http://github.com/mubashir1837/)
 - **LinkedIn**: [Mubashir Ali](https://linkedin.com/in/mubashirali3)
 
-## How to Contribute
+---
+
+## 📊 Insights
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mubashir1837&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mubashir1837&layout=compact&theme=radical)
+
+---
+
+## ⚙️ Workflows
+### Deployment Workflow
+This project uses GitHub Actions for automated deployment:
+- **Trigger**: Push to the `main` branch.
+- **Action**: Deploy to [Vercel](https://vercel.com/).
+
+---
+
+## 🤝 How to Contribute
 If you'd like to contribute to my portfolio website, you can follow these steps:
 
 1. **Fork** the repository.
 2. **Clone** the forked repository to your local machine:
-    ```
-    git clone https://github.com/mubashir1837/portfolio-html
-    ```
+        ```bash
+        git clone https://github.com/mubashir1837/mubashir1837.github.io.git
+        ```
 3. Make your changes and enhancements.
 4. **Commit** your changes:
-    ```
-    git commit -am 'Added feature XYZ'
-    ```
+        ```bash
+        git commit -am 'Added feature XYZ'
+        ```
 5. **Push** to your forked repository:
-    ```
-    git push origin master
-    ```
+        ```bash
+        git push origin master
+        ```
 6. Finally, create a new **Pull Request** from your forked repository to the original repository.
 
 Thank you for your contributions!
 
-## License
+---
+
+## 📜 License
 This project is licensed under the [MIT License](LICENSE).
+
+---
