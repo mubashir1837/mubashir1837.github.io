@@ -1,17 +1,22 @@
-# Portfolio Website
+# Personal Portfolio 🔥
 
-Welcome to my portfolio website! This website showcases my projects, skills, and experience as a designer and developer.
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/mubashir1837/mubashir1837.github.io/commits/main)
+[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](https://mubashir1837.github.io/)
+[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/mubashirali3/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
----
+<!-- GitHub Repo Badges -->
+[![GitHub Stars](https://img.shields.io/github/stars/mubashir1837/mubashir1837.github.io?style=social)](https://github.com/mubashir1837/mubashir1837.github.io/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mubashir1837/mubashir1837.github.io?style=social)](https://github.com/mubashir1837/mubashir1837.github.io/network/members)
+[![GitHub Watchers](https://img.shields.io/github/watchers/mubashir1837/mubashir1837.github.io?style=social)](https://github.com/mubashir1837/mubashir1837.github.io/watchers)
+[![GitHub Issues](https://img.shields.io/github/issues/mubashir1837/mubashir1837.github.io)](https://github.com/mubashir1837/mubashir1837.github.io/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/mubashir1837/mubashir1837.github.io)](https://github.com/mubashir1837/mubashir1837.github.io/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/mubashir1837/mubashir1837.github.io)](https://github.com/mubashir1837/mubashir1837.github.io/commits/main)
+[![Top Language](https://img.shields.io/github/languages/top/mubashir1837/mubashir1837.github.io)](https://github.com/mubashir1837/mubashir1837.github.io)
 
-## 🛠️ Tech Stack
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
 
----
+:star: Star me on GitHub — it helps!
+
 
 
 ## 📈 Project Metrics
@@ -26,70 +31,83 @@ Welcome to my portfolio website! This website showcases my projects, skills, and
 [![Usage Metrics](https://img.shields.io/badge/Usage-Metrics-cyan?style=flat-square)](https://github.com/mubashir1837/mubashir1837.github.io/actions/metrics/usage)
 [![Dependencies](https://img.shields.io/badge/Dependencies-Status-brightgreen?style=flat-square)](https://github.com/mubashir1837/mubashir1837.github.io/network/dependencies)
 
-
----
-
-<div align="center">
-    <br />
-        <a href="https://mubashir-a.vercel.app" target="_blank">
-            <img src="./img/porfolio.gif" alt="Project Banner">
-        </a>
-    <br />
-</div>
-
----
-
-## 🚀 About Me
-I am **Mubashir Ali**, a passionate designer and developer with a keen interest in creating user-centered digital experiences.
-
----
-
-## 🌐 Connect with Me
-- **GitHub**: [mubashir1837](http://github.com/mubashir1837/)
-- **LinkedIn**: [Mubashir Ali](https://linkedin.com/in/mubashirali3)
-
----
-
-## 📊 Insights
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mubashir1837&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mubashir1837&layout=compact&theme=radical)
+### Website Preview
+#### Home Page
+<a href="/mubashir1837.github.io" target="_blank">
+<img src="img/home.png" width="900">
+</a>
 
 
----
+#### About Page
+<img src="img/about.png" width="900">
 
-## ⚙️ Workflows
-### Deployment Workflow
-This project uses GitHub Actions for automated deployment:
-- **Trigger**: Push to the `main` branch.
-- **Action**: Deploy to [GitHub Pages](https://pages.github.com/).
-- **Action**: Deploy to [Vercel](https://vercel.com/).
+#### Educations Page
+<img src="img/education.png" width="900">
 
----
+#### Projects Page
+<img src="img/projects.png" width="900">
 
-## 🤝 How to Contribute
-If you'd like to contribute to my portfolio website, you can follow these steps:
 
-1. **Fork** the repository.
-2. **Clone** the forked repository to your local machine:
-    ```bash
-    git clone https://github.com/mubashir1837/mubashir1837.github.io.git
-    ```
-3. Make your changes and enhancements.
-4. **Commit** your changes:
-    ```bash
-    git commit -am 'Added feature XYZ'
-    ```
-5. **Push** to your forked repository:
-    ```bash
-    git push origin master
-    ```
-6. Finally, create a new **Pull Request** from your forked repository to the original repository.
+#### services Page
+<img src="img/services.png" width="900">
 
-Thank you for your contributions!
 
----
+#### Skills Page
+<img src="img/skills.png" width="900">
 
-## 📜 License
-This project is licensed under the [MIT License](LICENSE).
+#### Contact Page
+<img src="img/contact" width="900">
+  
 
----  
+
+:star: Star me on GitHub — it helps!
+
+## Features 📋
+⚡️ Fully Responsive\
+⚡️ Valid HTML5 & CSS3\
+⚡️ Typing animation using `Typed.js`\
+⚡️ Easy to modify
+
+## Installation & Deployment 📦
+- Clone the repository and modify the content
+- Add or remove images from `img/` directory as per your requirement.
+- Use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create your own website.
+- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io` and push the generated code to the `main` branch.
+
+## Sections 📚
+✔️ Home\
+✔️ About\
+✔️ Education\
+✔️ Skills\
+✔️ Experience\
+✔️ Services\
+✔️ Projects \
+✔️ Contact Info
+
+
+
+## Tools Used 🛠️
+* <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
+
+## Contributing 💡
+#### Step 1
+
+- **Option 1**
+    - 🍴 Fork this repo!
+
+- **Option 2**
+    - 👯 Clone this repo to your local machine.
+
+
+#### Step 2
+
+- **Build your code** 🔨🔨🔨
+
+#### Step 3
+
+- 🔃 Create a new pull request.
+
+## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/mubashir1837/mubashir1837.github.io/blob/main/License.txt)
+
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
