@@ -56,7 +56,7 @@
 <img src="img/skills.png" width="900">
 
 #### Contact Page
-<img src="img/contact" width="900">
+<img src="img/contact.png" width="900">
   
 
 
