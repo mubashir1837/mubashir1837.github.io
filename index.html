@@ -31,9 +31,8 @@
   <!-- Cross-browser CSS reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   
-  <!-- Tailwind CSS with fallback -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   
   <!-- Font Awesome with SVG fallback -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -74,9 +73,325 @@
       ]
     }
   </script>
+  
+  <!-- Inline critical CSS for faster rendering -->
+  <style>
+    /* Fallback styles for browsers that don't support gradients */
+    .bg-gradient-fallback {
+      background-color: #010524;
+    }
+    
+    /* Cross-browser gradient support */
+    .bg-gradient-custom {
+      background: #010524; /* Fallback */
+      background: -webkit-linear-gradient(left, #010524, #040c5c); /* Safari, Chrome */
+      background: -moz-linear-gradient(left, #010524, #040c5c); /* Firefox */
+      background: -o-linear-gradient(left, #010524, #040c5c); /* Opera */
+      background: linear-gradient(to right, #010524, #040c5c); /* Standard */
+    }
+    
+    /* Cross-browser transform support */
+    .transform-custom {
+      -webkit-transform: translateY(-2px);
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    
+    /* Cross-browser transition support */
+    .transition-custom {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    /* Ensure text is visible on all browsers */
+    body {
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    /* Fix for older IE */
+    img {
+      border: 0;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Ensure proper display on all browsers */
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    /* Fallback for flex */
+    .flex-fallback {
+      display: table;
+      width: 100%;
+    }
+    
+    .flex-fallback-item {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        max-width: 720px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .container {
+        max-width: 960px;
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1140px;
+      }
+    }
+  </style>
+  
+  <!-- Anti-inspection scripts -->
+  <script>
+    // Advanced anti-inspection protection
+    (function() {
+      // Disable right-click
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        return false;
+      }, true);
+      
+      // Disable keyboard shortcuts for inspection
+      document.addEventListener('keydown', function(e) {
+        // Disable F12
+        if (e.keyCode === 123) {
+          e.preventDefault();
+          return false;
+        }
+        
+        // Disable Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U
+        if ((e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) || 
+            (e.ctrlKey && e.keyCode === 85)) {
+          e.preventDefault();
+          return false;
+        }
+      }, true);
+      
+      // Disable text selection
+      document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+        return false;
+      }, true);
+      
+      // Disable copy
+      document.addEventListener('copy', function(e) {
+        e.clipboardData.setData('text/plain', 'Copying content is not allowed on this website.');
+        e.preventDefault();
+        return false;
+      }, true);
+      
+      // Disable cut
+      document.addEventListener('cut', function(e) {
+        e.preventDefault();
+        return false;
+      }, true);
+      
+      // Disable drag
+      document.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+        return false;
+      }, true);
+      
+      // Console warning and clearing
+      const warningMessage = 
+        '%c⚠️ Warning: This website is protected!%c\n' +
+        'Attempting to inspect, copy, or modify content is prohibited.\n' +
+        'This page is monitored for security purposes.';
+      
+      const clearConsole = function() {
+        console.clear();
+        setTimeout(function() {
+          console.log(warningMessage, 'color: red; font-size: 24px; font-weight: bold;', 'color: black; font-size: 16px;');
+        }, 100);
+      };
+      
+      // Clear console initially
+      clearConsole();
+      
+      // Detect DevTools opening
+      let devToolsTimeout;
+      const devToolsDetection = function() {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+        
+        if (widthThreshold || heightThreshold) {
+          document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Developer Tools Detected</h1><p style="text-align: center;">This website is protected against inspection.</p>';
+          clearTimeout(devToolsTimeout);
+          devToolsTimeout = setTimeout(function() {
+            window.location.reload();
+          }, 3000);
+        }
+      };
+      
+      // Check for DevTools periodically
+      setInterval(devToolsDetection, 1000);
+      
+      // Detect console opening
+      const consoleCheck = function() {
+        const before = new Date().getTime();
+        debugger;
+        const after = new Date().getTime();
+        if (after - before > 100) {
+          document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Debugging Detected</h1><p style="text-align: center;">This website is protected against inspection.</p>';
+          setTimeout(function() {
+            window.location.reload();
+          }, 3000);
+        }
+      };
+      
+      // Check for console opening periodically
+      setInterval(consoleCheck, 1000);
+      
+      // Override console methods
+      const originalConsole = {
+        log: console.log,
+        warn: console.warn,
+        error: console.error,
+        info: console.info,
+        debug: console.debug
+      };
+      
+      console.log = function() {
+        clearConsole();
+        originalConsole.log.apply(console, arguments);
+      };
+      
+      console.warn = function() {
+        clearConsole();
+        originalConsole.warn.apply(console, arguments);
+      };
+      
+      console.error = function() {
+        clearConsole();
+        originalConsole.error.apply(console, arguments);
+      };
+      
+      console.info = function() {
+        clearConsole();
+        originalConsole.info.apply(console, arguments);
+      };
+      
+      console.debug = function() {
+        clearConsole();
+        originalConsole.debug.apply(console, arguments);
+      };
+      
+      // Prevent view source
+      window.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.key === 'u') {
+          e.preventDefault();
+          return false;
+        }
+      });
+      
+      // Disable developer tools via debugger
+      function disableDevTools() {
+        if (window.devtools && window.devtools.open) {
+          debugger;
+        }
+      }
+      
+      // Run the function periodically
+      setInterval(disableDevTools, 100);
+      
+      // Obfuscate HTML source
+      setTimeout(function() {
+        // Store original HTML
+        const originalHTML = document.documentElement.innerHTML;
+        
+        // Create a MutationObserver to detect changes to the DOM
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList') {
+              // Check if DevTools is likely open
+              const widthThreshold = window.outerWidth - window.innerWidth > 160;
+              const heightThreshold = window.outerHeight - window.innerHeight > 160;
+              
+              if (widthThreshold || heightThreshold) {
+                // Restore original HTML to prevent inspection
+                document.documentElement.innerHTML = originalHTML;
+              }
+            }
+          });
+        });
+        
+        // Start observing the document
+        observer.observe(document.documentElement, {
+          childList: true,
+          subtree: true
+        });
+      }, 1000);
+      
+      // Add a layer of protection using iframe sandbox
+      try {
+        if (window.self !== window.top) {
+          // If the page is loaded in an iframe, block it
+          window.top.location = window.self.location;
+        }
+      } catch (e) {
+        // If we can't access window.top, we're likely in a sandboxed iframe
+        console.error('This website cannot be displayed in frames.');
+      }
+      
+      // Detect if the site is being scraped
+      if (navigator.webdriver) {
+        document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Automated Access Detected</h1><p style="text-align: center;">This website is protected against scraping.</p>';
+      }
+      
+      // Add a hidden honeypot element for scrapers
+      const honeypot = document.createElement('div');
+      honeypot.style.display = 'none';
+      honeypot.className = 'source-code-container';
+      honeypot.innerHTML = 'This is a honeypot for scrapers. If you can see this, you are likely using automated tools to access this site.';
+      document.body.appendChild(honeypot);
+      
+      // Add code to detect if the page is being loaded in a headless browser
+      if (/HeadlessChrome/.test(navigator.userAgent)) {
+        document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Headless Browser Detected</h1><p style="text-align: center;">This website is protected against automated access.</p>';
+      }
+      
+      // Add protection against source viewing
+      document.addEventListener('DOMContentLoaded', function() {
+        // Obfuscate the HTML by adding comments and random elements
+        const comments = [
+          '<!-- This website is protected -->',
+          '<!-- Unauthorized copying is prohibited -->',
+          '<!-- Copyright Mubashir Ali -->',
+          '<!-- All rights reserved -->'
+        ];
+        
+        // Add random comments throughout the document
+        const allElements = document.getElementsByTagName('*');
+        for (let i = 0; i < allElements.length; i++) {
+          if (Math.random() > 0.7) {
+            const commentNode = document.createComment(comments[Math.floor(Math.random() * comments.length)]);
+            allElements[i].parentNode.insertBefore(commentNode, allElements[i]);
+          }
+        }
+      });
+    })();
+  </script>
 </head>
 
-<body class="bg-gradient-fallback bg-gradient-custom text-white">
+<body class="bg-gradient-fallback bg-gradient-custom text-white" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
   <header class="pt-4">
     <!-- Social media links -->
     <nav class="absolute left-4 top-[10%] lg:top-[60%] md:left-6 lg:left-8 transform md:-translate-y-1/2" aria-label="Social Media">
@@ -187,6 +502,193 @@
     })();
   </script>
   
+  <!-- Additional anti-inspection protection -->
+  <script>
+    // Self-executing function to avoid global scope pollution
+    (function() {
+      // Create a custom error handler to catch console errors
+      window.onerror = function(message, source, lineno, colno, error) {
+        // Check if the error is related to debugging
+        if (message.indexOf('Script error') !== -1) {
+          return true; // Suppress error
+        }
+        return false; // Let other errors through
+      };
+      
+      // Add a trap for the debugger statement
+      setInterval(function() {
+        (function() {
+          try {
+            // This will trigger when a breakpoint is set
+            var x = new Function('debugger')();
+          } catch (e) {}
+        })();
+      }, 100);
+      
+      // Detect if page is framed (common technique for analyzing pages)
+      if (window.top !== window.self) {
+        window.top.location.href = window.self.location.href;
+      }
+      
+      // Add protection against source viewing via view-source:
+      if (window.location.protocol === 'view-source:') {
+        window.location.href = window.location.href.replace('view-source:', '');
+      }
+      
+      // Add protection against saving the page
+      document.addEventListener('keydown', function(e) {
+        // Detect Ctrl+S
+        if (e.ctrlKey && e.keyCode === 83) {
+          e.preventDefault();
+          return false;
+        }
+      });
+      
+      // Add a decoy/fake HTML structure that will be shown in DevTools
+      function createDecoyHTML() {
+        // Create a hidden div with fake content
+        var decoy = document.createElement('div');
+        decoy.style.display = 'none';
+        decoy.id = 'source-code';
+        decoy.innerHTML = `
+          <!-- This is not the actual source code -->
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>Protected Content</title>
+            </head>
+            <body>
+              <h1>This website is protected against inspection</h1>
+              <p>The actual source code is not available for viewing or copying.</p>
+              <!-- Fake structure to mislead -->
+              <div id="container">
+                <header>
+                  <nav>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                </header>
+                <main>
+                  <section>
+                    <h2>Protected Content</h2>
+                    <p>This content is protected by copyright law.</p>
+                  </section>
+                </main>
+                <footer>
+                  <p>&copy; 2023 Protected Website</p>
+                </footer>
+              </div>
+            </body>
+          </html>
+        `;
+        document.body.appendChild(decoy);
+      }
+      
+      // Create the decoy HTML
+      createDecoyHTML();
+      
+      // Advanced DevTools detection using timing
+      var devToolsDetector = {
+        isOpen: false,
+        orientation: null,
+        
+        // Method to check if DevTools is open
+        checkDevTools: function() {
+          const widthThreshold = window.outerWidth - window.innerWidth > 160;
+          const heightThreshold = window.outerHeight - window.innerHeight > 160;
+          const orientation = widthThreshold ? 'vertical' : 'horizontal';
+          
+          if (widthThreshold || heightThreshold) {
+            if (!this.isOpen || this.orientation !== orientation) {
+              this.isOpen = true;
+              this.orientation = orientation;
+              this.onDevToolsOpen();
+            }
+          } else {
+            if (this.isOpen) {
+              this.isOpen = false;
+              this.orientation = null;
+              this.onDevToolsClose();
+            }
+          }
+        },
+        
+        // Method called when DevTools is opened
+        onDevToolsOpen: function() {
+          // Redirect or show warning
+          document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Developer Tools Detected</h1><p style="text-align: center;">This website is protected against inspection.</p>';
+          
+          // Optional: redirect after a delay
+          setTimeout(function() {
+            window.location.reload();
+          }, 3000);
+        },
+        
+        // Method called when DevTools is closed
+        onDevToolsClose: function() {
+          // Reload the page to restore content
+          window.location.reload();
+        },
+        
+        // Initialize the detector
+        init: function() {
+          var self = this;
+          
+          // Check on resize (common way to detect DevTools)
+          window.addEventListener('resize', function() {
+            self.checkDevTools();
+          });
+          
+          // Check periodically
+          setInterval(function() {
+            self.checkDevTools();
+          }, 1000);
+          
+          // Check on load
+          window.addEventListener('load', function() {
+            self.checkDevTools();
+          });
+        }
+      };
+      
+      // Initialize the DevTools detector
+      devToolsDetector.init();
+      
+      // Add protection against automated tools
+      if (navigator.webdriver || /PhantomJS|Headless/.test(navigator.userAgent)) {
+        document.body.innerHTML = '<h1 style="color: red; text-align: center; margin-top: 50px;">Automated Access Detected</h1><p style="text-align: center;">This website is protected against automated access.</p>';
+      }
+      
+      // Add a layer of obfuscation by dynamically generating content
+      function obfuscateDOM() {
+        // Get all elements
+        var elements = document.querySelectorAll('*');
+        
+        // Add random data attributes to elements
+        for (var i = 0; i < elements.length; i++) {
+          if (Math.random() > 0.7) {
+            elements[i].setAttribute('data-' + Math.random().toString(36).substring(2, 8), 
+                                    Math.random().toString(36).substring(2, 15));
+          }
+        }
+      }
+      
+      // Run the obfuscation
+      setTimeout(obfuscateDOM, 2000);
+      
+      // Prevent saving images
+      document.addEventListener('contextmenu', function(e) {
+        if (e.target.nodeName === 'IMG') {
+          e.preventDefault();
+          return false;
+        }
+      }, true);
+    })();
+  </script>
+  
   <!-- Defer non-critical JavaScript -->
   <script src="script.js" defer></script>
   
@@ -200,6 +702,38 @@
         document.body.appendChild(scriptElement);
       };
     }
+  </script>
+  
+  <!-- Final layer of protection -->
+  <script>
+    // Add a final layer of protection that runs after everything else
+    document.addEventListener('DOMContentLoaded', function() {
+      // Create a style element to disable user-select
+      var style = document.createElement('style');
+      style.textContent = `
+        * {
+          -webkit-user-select: none !important;
+          -moz-user-select: none !important;
+          -ms-user-select: none !important;
+          user-select: none !important;
+        }
+        
+        /* Disable pointer events on code elements */
+        pre, code {
+          pointer-events: none !important;
+        }
+      `;
+      document.head.appendChild(style);
+      
+      // Add a warning message when the page is about to be unloaded
+      window.addEventListener('beforeunload', function(e) {
+        // This won't actually show in modern browsers for security reasons,
+        // but it's an additional layer of protection for older browsers
+        var message = 'This page is protected. Are you sure you want to leave?';
+        e.returnValue = message;
+        return message;
+      });
+    });
   </script>
 </body>
 
