@@ -2,3 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Fallback styles for browsers that don't support gradients */
+    .bg-gradient-fallback {
+      background-color: #010524;
+    }
+    
+    /* Cross-browser gradient support */
+    .bg-gradient-custom {
+      background: #010524; /* Fallback */
+      background: -webkit-linear-gradient(left, #010524, #040c5c); /* Safari, Chrome */
+      background: -moz-linear-gradient(left, #010524, #040c5c); /* Firefox */
+      background: -o-linear-gradient(left, #010524, #040c5c); /* Opera */
+      background: linear-gradient(to right, #010524, #040c5c); /* Standard */
+    }
+    
+    /* Cross-browser transform support */
+    .transform-custom {
+      -webkit-transform: translateY(-2px);
+      -moz-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      -o-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    
+    /* Cross-browser transition support */
+    .transition-custom {
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    
+    /* Ensure text is visible on all browsers */
+    body {
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    /* Fix for older IE */
+    img {
+      border: 0;
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Ensure proper display on all browsers */
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    /* Fallback for flex */
+    .flex-fallback {
+      display: table;
+      width: 100%;
+    }
+    
+    .flex-fallback-item {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        max-width: 720px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .container {
+        max-width: 960px;
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1140px;
+      }
+    }
+
