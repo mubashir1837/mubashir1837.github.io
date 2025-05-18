@@ -2,7 +2,7 @@
   "name": "portfolio-html",
   "version": "1.0.0",
   "description": "Personal portfolio website",
-  "main": "index.html",
+  "main": "./index.html",
   "scripts": {
     "start": "live-server",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
@@ -223,10 +223,10 @@
   "homepage": "https://mubashir1837.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mubashir1837/portfolio-html"
+    "url": "https://github.com/mubashir1837/mubashir1837.github.io"
   },
   "bugs": {
-    "url": "https://github.com/mubashir1837/portfolio-html/issues"
+    "url": "https://github.com/mubashir1837/mubashir1837.github.io/issues"
   },
   "contributors": [
     "Mubashir Ali <mubashir1837@gmail.com> (https://github.com/mubashir1837)"
