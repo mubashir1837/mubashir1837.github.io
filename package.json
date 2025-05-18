@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Personal portfolio website",
   "main": "index.html",
+   "funding": {
+        "url": "https://github.com/sponsors/mubashir1837"
+      },
   "scripts": {
     "start": "live-server",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
-  "author": "",
+  "author": "Mubashir Ali",
   "license": "MIT",
   "keywords": [
     "Mubashir Ali Developer",
@@ -239,6 +242,20 @@
     "metaOgTitle": "Mubashir Ali | Full Stack Developer & Tech Innovator",
     "metaOgDescription": "Explore Mubashir Ali's portfolio: Full Stack Developer, AI/ML, Bioinformatics, Pakistani Tech YouTuber. Connect on GitHub, LinkedIn, Upwork, Fiverr, and more.",
     "metaOgUrl": "https://mubashir1837.github.io/",
+    "categories": [
+      "Portfolio",
+      "Personal Portfolio Website",
+      "Full Stack Developer",
+      "Full Stack Development",
+      "AI/ML",
+      "Bioinformatics",
+      "Open Source",
+      "Freelancing",
+      "Web Development",
+      "Education",
+      "YouTube",
+      "Coding Tutorials"
+    ],
     "metaOgImage": "https://mubashir1837.github.io/img/pro-.jpg",
     "metaTwitterCard": "summary_large_image",
     "metaTwitterSite": "@mubashir1837",
