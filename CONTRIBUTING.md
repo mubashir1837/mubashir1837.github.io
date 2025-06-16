@@ -4,7 +4,7 @@ First off, thank you for considering contributing to our project! Your contribut
 
 ## Table of Contents
 
-1. [Code of Conduct](#code-of-conduct)  
+1. [Code of Conduct](./CODE_OF_CONDUCT.md)  
 2. [How Can I Contribute?](#how-can-i-contribute)  
     - [Reporting Bugs](#reporting-bugs)  
     - [Suggesting Enhancements](#suggesting-enhancements)  
