@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs - Mubashir Ali Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981',
+                        secondary: '#8B5CF6',
+                        accent: '#F59E0B',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                        <i class="fas fa-code text-white"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">Mubashir Ali</h1>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#" class="text-primary font-semibold">Designs</a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+                    <a href="#" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                My Designs
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Crafting visual experiences that blend creativity with functionality. 
+                From educational platforms to professional branding.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">UI/UX Design</span>
+                <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Brand Identity</span>
+                <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Web Design</span>
+                <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">Social Media</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active bg-primary text-white px-6 py-3 rounded-full font-semibold transition-all hover:shadow-lg" data-filter="all">
+                    All Designs
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-300" data-filter="web">
+                    Web Design
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-300" data-filter="branding">
+                    Branding
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-300" data-filter="social">
+                    Social Media
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-300" data-filter="educational">
+                    Educational
+                </button>
+                <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-full font-semibold transition-all hover:bg-gray-300" data-filter="dashboard">
+                    Dashboards
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Designs Gallery -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Website Development Banner -->
+                <div class="design-item web branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WEBSITE%20DEVELOPEMENT-EihUg4FHxWJuwJ3Bop0AvQuvLOrOQf.png" alt="Website Development Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Web Development Promo</h3>
+                        <p class="text-gray-600 mb-4">Professional promotional banner for web development services with modern design elements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Web Design</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-semibold">Marketing</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-purple-500 to-pink-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Canva for Students -->
+                <div class="design-item educational social bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/In%20the%20love%20of%20Canva-G3G25JOIEQE1LqKkW6JiEIjXyIwvav.png" alt="Canva for Students" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Canva Educational Campaign</h3>
+                        <p class="text-gray-600 mb-4">Vibrant promotional design for Canva's student program with engaging visual elements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Education</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">Campaign</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Why Choose Me - Service Banner -->
+                <div class="design-item branding social bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-GXROm6obNrutxf1l0bLU9uBek84uNH.png" alt="Why Choose Me Service Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Professional Service Banner</h3>
+                        <p class="text-gray-600 mb-4">Clean service presentation highlighting experience, expertise, and client satisfaction guarantees.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Branding</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Services</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-primary to-green-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LaTeX Resume Writing Service -->
+                <div class="design-item educational branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-BtUhzUCNCo6W4EQdxgwy31ZN3eeA5s.png" alt="LaTeX Resume Writing Service" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Academic Writing Services</h3>
+                        <p class="text-gray-600 mb-4">Professional LaTeX resume and research paper writing with ATS optimization and proper citations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Academic</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">Writing</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-purple-500 to-pink-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SEO Services Banner -->
+                <div class="design-item web branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-fj4s3NDH1jStFcMi0alyNSAAasSjZc.png" alt="SEO Services Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SEO Optimization Services</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive SEO service banner with detailed optimization techniques and Google ranking strategies.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">SEO</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-semibold">Marketing</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-red-500 to-orange-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Academic Resume Service -->
+                <div class="design-item educational branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-33mgNpxJfjYbVfaPXBt9yVqBDuq7NJ.png" alt="Academic Resume Service" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Academic CV Design</h3>
+                        <p class="text-gray-600 mb-4">Professional academic CV and resume design with LaTeX formatting for graduate school applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Academic</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">Professional</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-purple-500 to-indigo-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SEO Why Choose Me -->
+                <div class="design-item web branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-4CW5lHkBuYJD6Od84XwB2P2Xz3bWFT.png" alt="SEO Why Choose Me Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">SEO Service Credentials</h3>
+                        <p class="text-gray-600 mb-4">Professional credentials banner emphasizing experience, results, and satisfaction guarantee for SEO services.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">SEO</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">Credentials</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-red-500 to-yellow-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Presentation Design -->
+                <div class="design-item educational web bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-8OgiXHnEknZU15xN87EiDcJYv4iGPM.png" alt="NLP Presentation Design" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Technical Presentation Design</h3>
+                        <p class="text-gray-600 mb-4">Professional presentation design for Natural Language Processing and AI concepts with modern visual elements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Presentation</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">AI/ML</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-purple-500 to-blue-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Content Creator Banner -->
+                <div class="design-item social educational bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-JCKevcuyudAfnqIodxosJPJSxcNEdF.png" alt="Content Creator Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Content Creation Services</h3>
+                        <p class="text-gray-600 mb-4">Professional content creator banner showcasing technical education and AI/ML content development capabilities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold">Content</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Education</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-pink-500 to-blue-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Healthcare Analytics Dashboard -->
+                <div class="design-item web educational bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-Gz4ebyQ667Xp2Q1BKvZz655YNm9pTT.png" alt="Healthcare Analytics Dashboard" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Healthcare Analytics Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive healthcare data visualization dashboard with patient analytics, cost tracking, and treatment insights.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-semibold">Dashboard</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Healthcare</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-orange-500 to-green-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Code with Bismillah -->
+                <div class="design-item web educational bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Push%20yourself%2C-2wbhVGgx2lADz1dfu97ExtTyz7sVjG.png" alt="Code with Bismillah Platform" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg">Educational Platform</h3>
+                            <p class="text-sm">Interactive learning interface</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Code with Bismillah</h3>
+                        <p class="text-gray-600 mb-4">Educational platform design with modern UI and engaging user experience for coding tutorials.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Web Design</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Education</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-primary to-green-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pro Web Developer Banner -->
+                <div class="design-item branding social bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Blue%20Gradient%20Modern%20Freelancer%20YouTube%20Thumbnail%20-ynmDUwoe3g5GzMpIQmKk2jirgqQlTQ.png" alt="Pro Web Developer Banner" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Professional Developer Banner</h3>
+                        <p class="text-gray-600 mb-4">Eye-catching promotional banner showcasing web development services with modern tech stack.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">Branding</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Marketing</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-accent to-yellow-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LinkedIn Banner -->
+                <div class="design-item social branding bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Stunning%20Linkedin%20Banner-e4S1IbGP0cH4MLCZTKcvaNNqjihTek.png" alt="LinkedIn Banner Design" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">LinkedIn Professional Banner</h3>
+                        <p class="text-gray-600 mb-4">Professional LinkedIn banner with tech elements and data science visualization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Social Media</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">Professional</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- University Design -->
+                <div class="design-item branding educational bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Qu-MFT8U2ahXxkDh4SVZfkooQvDqKl8v6.png" alt="Quaid-i-Azam University" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">University Branding</h3>
+                        <p class="text-gray-600 mb-4">Institutional branding design for Quaid-i-Azam University with elegant typography.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Branding</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Institution</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-green-500 to-teal-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tech Industry Infographic -->
+                <div class="design-item social educational bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Love%20You%20Canva-Dacs0OBiQQNeMId5eYp5wa8vDtNZgF.png" alt="Tech Layoffs Infographic" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tech Industry Infographic</h3>
+                        <p class="text-gray-600 mb-4">Professional infographic design presenting tech industry statistics and trends with clean data visualization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">Infographic</span>
+                            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Data Viz</span>
+                        </div>
+                        <button class="w-full bg-gradient-to-r from-blue-500 to-gray-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">100+</div>
+                    <div class="text-green-100">Designs Created</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <div class="text-green-100">Happy Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">35+</div>
+                    <div class="text-green-100">Brands Designed</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">100%</div>
+                    <div class="text-green-100">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Let's collaborate to bring your vision to life with stunning designs that make an impact.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-gradient-to-r from-primary to-green-600 text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Get In Touch
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all">
+                    <i class="fas fa-download mr-2"></i>
+                    Download Portfolio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                            <i class="fas fa-code text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Mubashir Ali</h3>
+                    </div>
+                    <p class="text-gray-400">Creating digital experiences that inspire and engage.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://www.fiverr.com/mubashir183/" class="hover:text-white transition-colors">Web Design</a></li>
+                        <li><a href="https://www.fiverr.com/mubashir183/"" class="hover:text-white transition-colors">Brand Identity</a></li>
+                        <li><a href="https://www.fiverr.com/mubashir183/"" class="hover:text-white transition-colors">UI/UX Design</a></li>
+                        <li><a href="https://www.fiverr.com/mubashir183/"" class="hover:text-white transition-colors">Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://www.linkedin.com/in/mubashirali3" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="https://github.com/mubashir1837" class="hover:text-white transition-colors">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>mubashirali1837@gmail.com</li>
+                        <li>+92 3275882664</li>
+                        <li>Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Mubashir Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const designItems = document.querySelectorAll('.design-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-primary', 'text-white');
+                    b.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                // Add active class to clicked button
+                btn.classList.add('active', 'bg-primary', 'text-white');
+                btn.classList.remove('bg-gray-200', 'text-gray-700');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                designItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeIn 0.5s ease-in-out';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add fade in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
